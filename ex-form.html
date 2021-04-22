@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercício - Inputs</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+    }
+
+    h3 {
+      margin: 20px;
+    }
+
+    #formDiv {
+      max-width: 600px;
+      padding: 20px;
+      border: 3px solid black;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #buttons {
+      margin-left: auto;
+      margin-right: auto;
+      padding: auto 100px;
+    }
+
+    .field {
+      margin: 5px 0 5px 50px;
+    }
+
+    .bio {
+      min-width: 240px;
+      min-height: 120px;
+    }
+
+    .defaultButton {
+      margin: 20px;
+      min-width: 100px;
+      min-height: 30px;
+    }
+  </style>
+
+  <script>
+    var contador = 0;
+
+    function switchTheme() {
+
+      cor1 = ["orange", "black"];
+      cor2 = ["black", "orange"];
+      style = ["solid, dotted"];
+
+      elem = document.getElementById("formDiv")
+      elem.style.borderColor=cor[contador];
+      elem.style.borderStyle=style[contador];
+
+      elem = document.getElementsByTagName("body");
+      elem[0].backgroundColor=cor[contador];
+      elem[0].color=cor[contador];
+
+      elem = document.getElementsByClassName("field");
+      for(var i = 0; i < elem.length; i++) {
+        elem[i].style.backgroundColor=cor[contador];
+        elem[i].style.color=cor[contador];
+      }
+      contador = contador+1;
+
+      if(contador > 1)
+        contador = 0;
+    }
+  </script>
+</head>
+
+<body>
+  <div id="formDiv">
+    <form action="">
+      <h3>Formulário</h3>
+      <label for=nameField>Nome</label>
+      <input id=nameField class="field" type="text" placeholder="João da Silva" autofocus />
+      <br>
+      <label for=emailField>E-mail</label>
+      <input id=emailField class="field" type="text" placeholder="seuemail@provedor.com" />
+      <br>
+      <label for=bio>Perfil</label>
+      <br>
+      <textarea id=bio class="field bio" placeholder="Digite algo sobre você" maxlength=140 multiple></textarea>
+      <br>
+      <div id="buttons">
+        <input class=defaultButton type="submit" value="Enviar" disabled />
+        <input class=defaultButton type="reset" value="Apagar" />
+        <input class=defaultButton type="button" value="Tema" onClick="switchTheme(); return true" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>

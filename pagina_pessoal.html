@@ -5,43 +5,56 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css" />
     <title>Thalles de Souza Rodrigues</title>
-</head>
-
+  </head>
+  
 <body>
-    <div class="header">
-        <img class="profileimg" src="/home/tsrodr/Downloads/IMG_20191222_143039.jpg" />
-        <div class="headertext">
-            <h1>Thalles de Souza Rodrigues</h1>
-            <h2>Idade: 27 anos | Sexo: masculino <i>(ele/dele)</i></h2>
-            <h2>Taquara, Rio de Janeiro</h2>
-        </div>
+  <div class="themeSwitcher" onClick="switchTheme();" >tema claro</div>
+  
+  <div class="header">
+    <figure class="hasBorder">
+      <img class="profileimg" src="/home/tsrodr/Pictures/IMG_20191222_143039.jpg" />
+    </figure>
+    <div class="headertext">
+      <h1 class="heading">Thalles de Souza Rodrigues</h1>
+      <h2 class="heading">Idade: 27 anos | Sexo: masculino <i>(ele/dele)</i></h2>
+      <h2 class="heading">Taquara, Rio de Janeiro</h2>
     </div>
-    <div class="main">
-        <h2>Estudos Prévios</h2>
-        <ul>
-            <li>Colégio São Geraldo (ES), CA - 2ª série</li>
-            <li>Escola Municipal Vítor Meirelles, 3ª e 4ª séries</li>
-            <li>Escola Municipal Governador Carlos Lacerda, 5ª - 8ª séries</li>
-            <li>Colégio Nacional, ensino médio</li>
-            <li>Universidade Federal do Rio de Janeiro, Letras (Português - Inglês (interrompido)</li>
-            <li>Univerisdade Federal Rural do Rio de Janeiro, Sistemas de Informação (1º período)</li>
-        </ul>
-        <h2>Proficiências</h2>
-        <ul>
-            <li>Programação</li>
-                <ul>
-                    <li>Python [intermediário]</li>
-                    <li>HTML, CSS [intermediário]</li>
-                    <li>JavaScript [iniciante]</li>
-                    <li>C [iniciante]</li>
-                </ul>
-            <li>Microsoft Excel [Intermediário]</li>
-            <li>Gastronomia</li>
-            <li>Inglês</li>
-            <li>Linguística</li>
-        </ul>
-
-    </div>
+  </div>
+  
+  <div class="main hasBorder">
+    
+    <h2 class="heading clickable" onClick="toggle('estudos');">Estudos</h2>
+    <ul class="list1" id="estudos"> 
+      <li>Universidade Federal Rural do Rio de Janeiro, Sistemas de Informação (1º período)</li>
+      <li>Universidade Federal do Rio de Janeiro, Letras: Português - Inglês (interrompido)</li>
+      <li>Colégio Nacional, ensino médio</li>
+      <li>Escola Municipal Governador Carlos Lacerda, 5ª - 8ª séries</li>
+      <li>Escola Municipal Vítor Meirelles, 3ª e 4ª séries</li>
+      <li>Colégio São Geraldo (ES), CA - 2ª série</li>
+    </ul>
+    
+    <h2 class="heading">Proficiências</h2>
+    <ul class="list1">
+      <h3 class="heading clickable" onClick="toggle('prog');">Programação</h3>
+      <ul class="list2 listToggle" id="prog">
+        <li>Python, intermediário</li>
+        <li>HTML & CSS, intermediário</li>
+        <li>JavaScript, iniciante</li>
+        <li>C, iniciante</li>
+        <li>C++, iniciante</li>
+      </ul>
+      
+      <h3 class="heading clickable" onClick="toggle('outros');">Outros</h3>
+      <ul class="list2 listToggle" id="outros">
+        <li>Microsoft Excel, intermediário</li>
+        <li>Gastronomia, amador</li>
+        <li>Inglês, fluente</li>
+        <li>Linguística, amador</li>
+      </ul>
+    </ul>
+    
+  </div>
+  
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
-
 </html>

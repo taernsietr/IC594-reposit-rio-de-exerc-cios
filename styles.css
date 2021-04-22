@@ -1,45 +1,93 @@
 body {
-    background-color: #303030;
-    color: orange;
-    margin: 0;
-    padding: 0;
+  background-color: #303030;
+  color: orange;
+  margin: 0;
+  padding: 0;
+  transition: 1s;
 }
 
 h1 {
-    font-size: 3em;
-    margin: auto;
+  font-size: 3em;
+  margin: auto;
+  transition: 1s;
 }
 
 h2 {
-    color: darkorange;
-    font-size: 1.2em;
-    margin: auto;
+  color: darkorange;
+  font-size: 1.3em;
+  transition: 1s;
 }
 
-.header {
-    display: flex;
-    margin: 20px;
+h3 {
+  color: darkorange;
+  font-size: 1.1em;
+  margin: 15px 0 0 0;
+  transition: 1s;
 }
 
-.headertext {
-    margin: auto 30px;
-    padding: 30px;
+figure {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  max-height: 230px;
+  border: 2px solid orange;
 }
 
 .profileimg {
-    max-width: 300px;
-    border: solid 2px orange;
+  max-width: 300px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  margin: 20px;
+}
+
+.headertext {
+  margin: auto 30px;
+  padding: 30px;
 }
 
 .main {
-    margin: 20px;
-    border: 2px double orange;
+  margin: 20px;
+  border: 2px solid orange;
 }
 
-.main ul, h2 {
-    margin: 15px;
+.list1, h2 {
+  margin: 20px 20px 20px 40px;
+  padding-left: 10px;
 }
 
-.main ul li {
-    margin: 5px;
+.list2 {
+  margin: 15px 0 0 0;
+  padding-left: 0;
+}
+
+.hasBorder {
+  transition: border 1s;
+}
+
+.themeSwitcher {
+  max-height: 30px;
+  max-width: 100px;
+  background-color: #303030;
+  color: orange;
+  cursor: pointer;
+  border: 5px solid darkorange;
+  border-right: 0 solid transparent;
+  border-radius: 10px 0 0 10px;
+  position: fixed;
+  padding: 6px;
+  right: 0;
+  top: 100px;
+  transition: 1s;
+}
+
+.themeSwitcher:hover {
+  border: 5px solid white;
+  border-right: 0 solid transparent;
+  border-radius: 10px 0 0 10px;
 }
