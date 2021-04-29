@@ -6,7 +6,7 @@ acColors = ["darkorange", "darkgreen"];
 bdColors = ["orange", "darkgreen"];
 bgColors = ["#303030", "white"];
 themeName = ["tema claro", "tema escuro"];
-profileImg = ["/home/tsrodr/Pictures/IMG_20191222_143039.jpg", "/home/tsrodr/Pictures/IMG_20191214_204651.jpg"];
+profileImg = ["/home/tsrodr/Pictures/my-pictures/IMG_20191222_143039.jpg", "/home/tsrodr/Pictures/my-pictures/IMG_20191214_204651.jpg"];
 profileMargin = ["0 0 0 0", "-40% 0 0 0"];
   
 function toggle(id)
@@ -79,6 +79,16 @@ function switchTheme()
   return true;
 }
 
-function pageIntro() {
-  obj = document.getElementById("")
+/* funções para fazer o mouse controlar o círculo (e futuramente a outra figura svg)
+
+var mx, my = 0;
+document.body.addEventListener('mousemove')
+
+document.getElementById('rightCanvas').addEventListener('click'), () => 
+{
+  document.getElementById('circ').setAttribute('transform', )
+
+  return true;
 }
+
+*/

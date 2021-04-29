@@ -2,17 +2,18 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Thalles de Souza Rodrigues</title>
-  </head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Thalles de Souza Rodrigues</title>
+</head>
   
 <body>
   <div class="themeSwitcher" onClick="switchTheme();" >tema claro</div>
   
   <div class="header">
     <figure class="hasBorder">
-      <img class="profileimg" src="/home/tsrodr/Pictures/IMG_20191222_143039.jpg" />
+      <img class="profileimg" src="/home/tsrodr/Pictures/my-pictures/IMG_20191222_143039.jpg" />
     </figure>
     <div class="headertext">
       <h1 class="heading">Thalles de Souza Rodrigues</h1>
@@ -22,37 +23,43 @@
   </div>
   
   <div class="main hasBorder">
+    <div class="main-col">
     
-    <h2 class="heading clickable" onClick="toggle('estudos');">Estudos</h2>
-    <ul class="list1" id="estudos"> 
-      <li>Universidade Federal Rural do Rio de Janeiro, Sistemas de Informação (1º período)</li>
-      <li>Universidade Federal do Rio de Janeiro, Letras: Português - Inglês (interrompido)</li>
-      <li>Colégio Nacional, ensino médio</li>
-      <li>Escola Municipal Governador Carlos Lacerda, 5ª - 8ª séries</li>
-      <li>Escola Municipal Vítor Meirelles, 3ª e 4ª séries</li>
-      <li>Colégio São Geraldo (ES), CA - 2ª série</li>
-    </ul>
-    
-    <h2 class="heading">Proficiências</h2>
-    <ul class="list1">
-      <h3 class="heading clickable" onClick="toggle('prog');">Programação</h3>
-      <ul class="list2 listToggle" id="prog">
-        <li>Python, intermediário</li>
-        <li>HTML & CSS, intermediário</li>
-        <li>JavaScript, iniciante</li>
-        <li>C, iniciante</li>
-        <li>C++, iniciante</li>
+      <h2 class="heading clickable" onClick="toggle('estudos');">Estudos</h2>
+      <ul class="list1" id="estudos"> 
+        <li>Universidade Federal Rural do Rio de Janeiro, Sistemas de Informação (1º período)</li>
+        <li>Universidade Federal do Rio de Janeiro, Letras: Português - Inglês (interrompido)</li>
+        <li>Colégio Nacional, ensino médio</li>
+        <li>Escola Municipal Governador Carlos Lacerda, 5ª - 8ª séries</li>
+        <li>Escola Municipal Vítor Meirelles, 3ª e 4ª séries</li>
+        <li>Colégio São Geraldo (ES), CA - 2ª série</li>
       </ul>
       
-      <h3 class="heading clickable" onClick="toggle('outros');">Outros</h3>
-      <ul class="list2 listToggle" id="outros">
-        <li>Microsoft Excel, intermediário</li>
-        <li>Gastronomia, amador</li>
-        <li>Inglês, fluente</li>
-        <li>Linguística, amador</li>
+      <h2 class="heading">Proficiências</h2>
+      <ul class="list1">
+        <h3 class="heading clickable" onClick="toggle('prog');">Programação</h3>
+        <ul class="list2 listToggle" id="prog">
+          <li>Python, intermediário</li>
+          <li>HTML & CSS, intermediário</li>
+          <li>JavaScript, iniciante</li>
+          <li>C, iniciante</li>
+          <li>C++, iniciante</li>
+        </ul>
+        
+        <h3 class="heading clickable" onClick="toggle('outros');">Outros</h3>
+        <ul class="list2 listToggle" id="outros">
+          <li>Microsoft Excel, intermediário</li>
+          <li>Gastronomia, amador</li>
+          <li>Inglês, fluente</li>
+          <li>Linguística, amador</li>
+        </ul>
       </ul>
-    </ul>
-    
+    </div>
+    <div class="main-col">
+      <svg id="rightCanvas" width="100%" height="100%" onclick="drawCircle();">
+        <circle id="circ" cx="400" cy="400" r="40px" />
+      </svg>
+    </div>
   </div>
   
   <script type="text/javascript" src="scripts.js"></script>

@@ -52,8 +52,13 @@ figure {
 }
 
 .main {
+  display: flex;
   margin: 20px;
   border: 2px solid orange;
+}
+
+.main-col {
+  flex: 50%;
 }
 
 .list1, h2 {
@@ -91,3 +96,11 @@ figure {
   border-right: 0 solid transparent;
   border-radius: 10px 0 0 10px;
 }
+
+/*
+
+#circ {
+  animation: 
+} 
+
+*/
